@@ -42,11 +42,11 @@ console.log('Gracz wpisał: ' + randomNumber);
 
 let playerMove = getMoveName(playerInput);
 
-printMessage('Mój ruch to: ' + playerMove);
+printMessage('Twój ruch to: ' + playerMove);
 
 
 function displayResult(argComputerMove, argPlayerMove){
-  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage('Komputer zagrał nożyce ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
   
   if (argComputerMove == "kamień" && argPlayerMove == "papier"){ 
