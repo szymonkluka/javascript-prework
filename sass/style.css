@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    text-align: center;
+   
+    color: yellow;
+    font-size: 58px;
+    line-height: 1.5;
+    padding: 0px 0px;
+    background-color: black;
+}
+
+h1 {
+    font-size: 72px;
+    
+}
+
+.multicolortext
+{
+   background-image: linear-gradient(to left, red, orange, yellow, pink, violet, blue, green);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 900;
+
+}
+
+
+
+
+h2 {
+    font-size: 31px;
+    color: #e3af34;
+}
+
+h3 {
+    font-size: 31px;
+    font-weight: 900;
+}
+
+
+
+
+p {
+    color: white;
+    font-size: 16px;
+} 
