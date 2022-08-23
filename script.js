@@ -1,10 +1,10 @@
-
-function playGame (playerInput){
+{
+const playGame = function (playerInput){
   clearMessages();
 
 
 
-  function getMoveName(argMoveId){
+  const getMoveName = function(argMoveId){
     if(argMoveId == 1){
       return 'kamień';
     } 
@@ -20,16 +20,11 @@ function playGame (playerInput){
   }
 
 
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
-
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Wylosowana liczba to: ' + randomNumber);
 
-  const scrollToBottom = (id) => {
-   const element = document.getElementById(id);
-   element.scrollTop = element.scrollHeight;
- }
 
- let computerMove = getMoveName(randomNumber);
+ const computerMove = getMoveName(randomNumber);
 
 
  printMessage('Ruch komputera to: ' + computerMove);
@@ -40,12 +35,11 @@ function playGame (playerInput){
 
  console.log('Gracz wpisał: ' + randomNumber);
 
- let playerMove = getMoveName(playerInput);
-
+ const playerMove = getMoveName(playerInput);
  printMessage('Twój ruch to: ' + playerMove);
 
 
- function displayResult(argComputerMove, argPlayerMove){
+ const displayResult = function(argComputerMove, argPlayerMove){
   printMessage('Komputer zagrał ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
   
@@ -104,36 +98,5 @@ document.getElementById('nożyce').addEventListener('click', function(){
 
 
 
-var count = 10;
 
-var papier = document.getElementById("papier");
-var disp = document.getElementById("display");
-papier.onclick = function () {
-  if (count == 0) return;
-  count -= 1;
-  disp.innerHTML = count;
-  
-};
-
-var count = 10;
-
-var kamień = document.getElementById("kamień");
-var disp = document.getElementById("display");
-kamień.onclick = function () {
-  if (count == 0) return;
-  count -= 1;
-  disp.innerHTML = count;
-  
-};
-
-var count = 10;
-
-var nożyce = document.getElementById("nożyce");
-var disp = document.getElementById("display");
-nożyce.onclick = function () {
-  if (count == 0) return;
-  count -= 1;
-  disp.innerHTML = count;
-
-};
-
+}
